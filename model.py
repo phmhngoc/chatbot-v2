@@ -3,10 +3,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from transformer import FeatureTransformer
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.model_selection import learning_curve
-import itertools
+
 
 class NaiveBayes_Model(object):
     def __init__(self):

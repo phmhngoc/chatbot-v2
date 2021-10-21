@@ -10,7 +10,9 @@
         " Không nghe được người khác đang nói chuyện trong zoom",
         " Người ta nói mình không nghe được",
         " Không nghe được tiếng của người khác trong zoom",
-        " Người khác đang phát tiếng nhưng không nghe được"
+        " Người khác đang phát tiếng nhưng không nghe được",
+        "người khác nói không nghe",
+        "không nghe người khác nói"
       ],
       "response": "Kiểm tra lại âm thanh bằng cách vào setting -> audio -> test speaker -> nếu nghe thấy tiếng thì ok, trường hợp không nghe thấy tiếng thì chọn lại đầu ra âm thanh trong mục thả xuống bên cạnh, trường hợp vẫn không được nữa thì thử thoát và tắt zoom sau đó khởi động lại"
     },
@@ -26,7 +28,8 @@
         " Lỗi nói người khác không nghe được trong zoom",
         " Nói nhưng không ai nghe thấy cả",
         " Không ai nghe được mình nói mặc dù mình đang nói",
-        " Nói nhưng mọi người không nghe được"
+        " Nói nhưng mọi người không nghe được",
+        "mình nói nhưng người khác không nghe"
       ],
       "response": "Kiểm tra lại mic bằng cách vào setting -> audio -> test mic -> nếu thấy nhận tín hiệu thì ok, trường hợp không được thì chọn lại đầu vào âm thanh trong mục thả xuống bên cạnh"
     },
@@ -166,7 +169,11 @@
         " bị lỗi khi save bài trong test quiz",
         " bị lỗi khi lưu bài trong test quiz",
         " đang làm bình thường tới lúc lưu bài thì bị lỗi",
-        " đang làm bình thường tới lúc save bài thì bị lỗi"
+        " đang làm bình thường tới lúc save bài thì bị lỗi",
+        "lưu bài làm thì tự thoát",
+        "lưu bài thì tự thoát",
+        "tự thoát khi lưu bài",
+        "thoát lưu bài"
       ],
       "response": "Vào làm lại và chú ý trong khi nên note đáp án lại ra giấy hoặc file text,…"
     },
@@ -181,7 +188,8 @@
         " Bị lỗi khi bấm next",
         " Bị lỗi khi bấm previous",
         " Bị lỗi khi bấm nút tiếp theo",
-        " Bị lỗi khi bấm nút quay lại"
+        " Bị lỗi khi bấm nút quay lại",
+        "bấm nút tiếp theo khi kiểm tra thì tự thoát"
       ],
       "response": "1. làm lại và chú ý trong khi nên note đáp án lại ra giấy hoặc file text,…\n2. Sử dụng thanh Table of contents gần thanh thời gian để xem danh sách các câu hỏi\n3. NHỚ BẤM SAVE THƯỜNG XUYÊN TRONG LÚC LÀM BÀI"
     },
@@ -194,7 +202,8 @@
         " Đã gửi bài nhưng giáo viên không nhận được",
         " Đã gửi bài nhưng giảng viên không nhận được",
         " Đã gửi bài nhưng thầy cô không nhận được",
-        " Giáo viên không nhận được bài dù đã submit"
+        " Giáo viên không nhận được bài dù đã submit",
+        "nộp bài rồi mà giảng viên không nhận được"
       ],
       "response": " Chắc chắn bạn đã làm đủ bước khi submit bài; nếu không có bài báo ngay với giảng viên để xử lí"
     },
@@ -224,7 +233,9 @@
         " Vào breakroom như thế nào",
         " Vào break room như thế nào",
         " Vô breakroom như thế nào",
-        " Vô break room như thế nào"
+        " Vô break room như thế nào",
+        "làm sao để tham gia breakroom",
+        "cách tham gia breakroom"
       ],
       "response": "Bấm vào More sau đó chọn Join Breakout Room"
     },
@@ -252,7 +263,8 @@
         " tạo tài khoản zoom mail dtu",
         " tạo tài khoản zoom bằng mail trường",
         " tạo tài khoản zoom mail trường",
-        " cách tạo tài khoản zoom bằng mail trường"
+        " cách tạo tài khoản zoom bằng mail trường",
+        "làm thế nào để tạo tài khoản zoom bằng mail trường"
       ],
       "response": "1. Đăng nhập vào tài khoản myDTu\n2. Chọn Học tập\n3. Chọn HƯỚNG DẪN SỬ DỤNG ZOOM - cho Sinh viên, có file pdf đầy đủ các bước bạn cần thực hiện"
     },
@@ -304,7 +316,7 @@
         " cách lấy lại password mydtu",
         " quên password mydtu",
         " làm sao khi quên mật khẩu mydtu",
-        " làm sao khi quên password  mydtu"
+        " làm sao khi quên password mydtu"
       ],
       "response": "TH1: Nếu bạn đã nhập mail cá nhân trong thông tin cá nhân ở myDTU, thì chọn quên mật khẩu trên trang myDTU để cài lại mật khẩu. Sau đó mật khẩu mới sẽ được gửi lại qua email mà bạn đã cung cấp.\nTH2: Nếu bạn chưa nhập mail cá nhân, bạn sẽ phải lên trung tâm CSE ở tầng 7, cơ sở 03 Quang Trung (yêu cầu thẻ sinh viên). Hoặc liên hệ : \nThầy Nguyễn Trọng Thành - Giám đốc Trung tâm CSE \nSố điện thoại: 0983.955591\n"
     },
@@ -312,13 +324,15 @@
       "tag": "khi_mydtu_bao_tri_thi_co_vao_sakai_duoc_khong",
       "patterns": [
         "mydtu bảo trì thì có vào được sakai không",
-        " mydtu bảo trì thì có vào được elearning  không",
+        " mydtu bảo trì thì có vào được elearning không",
         " có vào được sakai khi mydtu bảo trì không",
         " có vào được elearning khi mydtu bảo trì không",
         " làm sao vào được elearning khi mydtu bảo trì",
         " làm sao vào được sakai khi mydtu bảo trì",
         " mydtu bảo trì sai có vào được không",
-        " mydtu bảo trì elearnig có vào được không"
+        " mydtu bảo trì elearnig có vào được không",
+        "vào sakai lúc mydtu bảo trì",
+        "vào elearning lúc mydtu bảo trì"
       ],
       "response": "Không. Bạn vui lòng vào trước hoặc sau thời gian bảo trì nhé. (Bảo trì từ 23:00 đến 00:00 mỗi ngày)"
     },
@@ -358,7 +372,8 @@
         " có vào lại lớp khi bị kick không",
         " có vào lại lớp khi bị đuổi ra được không",
         " có vào lại lớp bị kick ",
-        " có vào lại lớp bị đuổi"
+        " có vào lại lớp bị đuổi",
+        "cách vào lại lớp khi bị đuổi"
       ],
       "response": "Không vào lại được nhé. Nếu có sai sót thì bạn vui lòng liên hệ giáo viên"
     },
@@ -411,7 +426,9 @@
         " thay đổi password mail trường",
         " thay đổi mail dtu",
         " cách đổi mật khẩu mail dtu",
-        " cách đổi mật khẩu mail trường"
+        " cách đổi mật khẩu mail trường",
+        "đổi password mail trường",
+        "đổi mật khẩu mail trường"
       ],
       "response": "1. Đăng nhập vào tài khoản myDTu\n2. Chọn Thông tin cá nhân -> Mật khẩu\n3. Điền mật khẩu cũ, mật khẩu mới\n4. Bấm nút Cập nhật để lưu"
     },
@@ -447,7 +464,14 @@
         " làm sao để hủy môn",
         " hủy môn như thế nào",
         " hủy môn học",
-        " hủy môn bằng cách nào"
+        " hủy môn bằng cách nào",
+        "hủy môn",
+        "cách hủy môn học",
+        "hủy môn học như thế nào",
+        "không muốn học một môn nữa thì hủy như thế nào",
+        "cách hủy môn trên mydtu",
+        "hủy môn học trên mydtu",
+        "muốn hủy môn thì làm gì"
       ],
       "response": "1. Đăng nhập MyDTU\n2. Chọn Học tập -> Đăng kí tín chỉ -> Chọn Năm học và Học kì\n3. Bấm nút xoá bên cạnh môn bạn muốn huỷ\nCHÚ Y: Bạn chỉ có thể huỷ môn trong thời hạn cho phép"
     },
@@ -457,7 +481,11 @@
         "vì sao không vào được mydtu",
         " không vào được mydtu",
         " mydtu không vào được",
-        " mydtu bị lỗi không vào được"
+        " mydtu bị lỗi không vào được",
+        "không truy cập được mydtu",
+        "truy cập mydtu không được",
+        "lỗi truy cập mydtu",
+        "mydru bị lỗi truy cập"
       ],
       "response": "Kiểm tra xem bạn có vào thời điểm MyDTU đang bảo trì hay không hoặc kiểm tra kết nối mạng"
     },
@@ -479,7 +507,9 @@
         "đã đổi lớp trên hệ thống nhưng không thấy lịch",
         " đổi lớp trên hệ thống nhưng không có lịch học",
         " không có lịch học đổi lớp trên hệ thống",
-        " không hiện lịch học đổi lớp trên hệ thống"
+        " không hiện lịch học đổi lớp trên hệ thống",
+        "đổi lớp nhưng không thấy lịch",
+        "không thấy lịch khi đã đổi lớp"
       ],
       "response": "Bạn vui lòng đợi trong vòng 1 ngày. Nếu vẫn không có lịch học, vui lòng liên hệ trung tâm CSE ở tầng 7, cơ sở 03 Quang Trung. Hoặc liên hệ : \nThầy Nguyễn Trọng Thành - Giám đốc Trung tâm CSE \nSố điện thoại: 0983.955591"
     },
@@ -490,7 +520,9 @@
         " không thấy hóa đơn nộp học phí qua ngân hàng",
         " chưa thấy hóa đơn nộp học phí qua ngân hàng",
         " nộp học phí qua ngân hàng nhưng không thấy hóa đơn",
-        " qua ngân hàng không thấy hóa đơn"
+        " qua ngân hàng không thấy hóa đơn",
+        "chuyển khoản qua ngân hàng nhưng không thấy hóa đơn",
+        "chưa thấy hóa đơn học phí dù đã chuyển khoản qua ngân hàng"
       ],
       "response": "Bạn vui lòng đợi khoảng 1 tuần sau đó kiểm tra tại mục Hoá đơn học phí. Nếu vẫn chưa có, vui lòng lên 137 Nguyễn Văn Linh để giải quyết."
     },
@@ -625,6 +657,11 @@
         " lỗi đăng kí tài khoản zoom bằng mail dtu không thành công"
       ],
       "response": "Lí do có thể là bạn đã từng tạo tài khoản @dtu.edu.vn để dùng thử và hết thời hạn nhưng không nhớ. Bạn vui lòng liên hệ đội ngũ hỗ trợ  kỹ thuật yêu cầu xóa tài khoản đã đăng ký sau đó tạo lại tài khoản mới nhé."
+    },
+    {
+      "tag": "boi_roi",
+      "patterns": [""],
+      "response": "Đéo hiểu"
     }
   ]
 }

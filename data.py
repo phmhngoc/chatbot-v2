@@ -14,7 +14,7 @@ def get_dbtrain():
 def get_dbanswers():
     db_answers = []
     for intent in data["intents"]:
-        db_answers.append({"Answers": intent["response"], "Intent": intent})
+        db_answers.append({"Answers": intent["response"], "Intent": intent["tag"]})
     return db_answers
 
 
