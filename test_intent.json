@@ -1,0 +1,22 @@
+[
+  {
+    "tag": "cach_huy_mon",
+    "patterns": [
+      "cách hủy môn",
+      " làm sao để hủy môn",
+      " hủy môn như thế nào",
+      " hủy môn học",
+      " hủy môn bằng cách nào",
+      "hủy môn",
+      "cách hủy môn học",
+      "hủy môn học như thế nào",
+      "không muốn học một môn nữa thì hủy như thế nào",
+      "cách hủy môn trên mydtu",
+      "hủy môn học trên mydtu",
+      "muốn hủy môn thì làm gì",
+      "hủy môn học thì làm như thế nào",
+      "hủy môn"
+    ],
+    "response": "1. Đăng nhập MyDTU\n2. Chọn Học tập -> Đăng kí tín chỉ -> Chọn Năm học và Học kì\n3. Bấm nút xoá bên cạnh môn bạn muốn huỷ\nCHÚ Y: Bạn chỉ có thể huỷ môn trong thời hạn cho phép"
+  }
+]

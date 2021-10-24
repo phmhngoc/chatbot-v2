@@ -1,7 +1,8 @@
 import data
-from model import LogisticRegression_Model, NaiveBayes_Model
+from model import LogisticRegression_Model, SVM_Model
 import numpy as np
 import pandas as pd
+from pyvi import ViTokenizer
 
 class TextClassificationPredict(object):
     def __init__(self):
@@ -11,7 +12,7 @@ class TextClassificationPredict(object):
         train_data = data.get_dbtrain()
         df_train = pd.DataFrame(train_data)
         model = LogisticRegression_Model()
-        model2 = NaiveBayes_Model()
+        model2 = SVM_Model()
         data_answer = pd.DataFrame(data.get_dbanswers())
         # Print predicted result
         while True:
@@ -29,14 +30,11 @@ class TextClassificationPredict(object):
                 print("Nếu không, vui lòng nhập chi tiết hơn")
                 print(predicted2)
                 print (np.ndarray.max(clf1.predict_proba(df_test["Question"])))
-                print(data_answer[predicted])
             else:
                 # return ({"predicted": predicted, "proba": np.ndarray.max(clf.predict_proba(df_test["Question"]))})
                 print (predicted)
                 print (np.ndarray.max(clf.predict_proba(df_test["Question"])))
                 print(predicted2)
-                s = data_answer.loc[data_answer['Intent'] == " ".join(predicted), 'Answers']
-                print(s.iat[0])
                 print (np.ndarray.max(clf1.predict_proba(df_test["Question"])))
 
 

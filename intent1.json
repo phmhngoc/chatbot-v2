@@ -264,7 +264,11 @@
         " tạo tài khoản zoom bằng mail trường",
         " tạo tài khoản zoom mail trường",
         " cách tạo tài khoản zoom bằng mail trường",
-        "làm thế nào để tạo tài khoản zoom bằng mail trường"
+        "làm thế nào để tạo tài khoản zoom bằng mail trường",
+        "cách đăng ký tài khoản zoom bằng mail trường",
+        "cách đăng ký tài khoản zoom bằng mail dtu",
+        "làm sao để đăng ký tài khoản zoom bằng mail trường",
+        "đăng ký tài khoản zoom bằng mail trường như thế nào"
       ],
       "response": "1. Đăng nhập vào tài khoản myDTu\n2. Chọn Học tập\n3. Chọn HƯỚNG DẪN SỬ DỤNG ZOOM - cho Sinh viên, có file pdf đầy đủ các bước bạn cần thực hiện"
     },
@@ -554,7 +558,11 @@
         "không vào được mục test quiz",
         " mục test quiz không vào được",
         " không truy cập được mục test quiz",
-        " mục test quiz không truy cập được"
+        " mục test quiz không truy cập được",
+        " test quiz bị lỗi",
+        " test quiz bị lỗi không vào được",
+        " không mở test quiz được",
+        " test quiz không mở được"
       ],
       "response": "1. Kiểm tra lại kết nối mạng của bạn\n2. Nếu không được, vui lòng báo giảng viên"
     },
@@ -598,7 +606,10 @@
         " chưa nộp tiền học lúc thi thì sao",
         " tới ngày thi chưa nộp tiền học có bị gì không",
         " ngày thi chưa nộp tiền học có vấn đề gì không",
-        " có bị phạt ngày thi chưa nộp tiền học"
+        " có bị phạt ngày thi chưa nộp tiền học",
+        " chưa nộp tiền học thì có được thi không",
+        " không nộp tiền thì có được thi không",
+        " có được thi khi chưa nộp tiền"
       ],
       "response": "Bạn sẽ không được tham gia thi cuối kì, nên vui lòng hãy hoàn thành học phí tối thiểu 3 ngày trước khi thi môn đầu tiên."
     },
@@ -609,7 +620,9 @@
         " thi online cần lưu ý gì",
         " các vấn đề cần lưu ý khi thi online",
         " lưu ý khi thi online",
-        " những lưu ý khi thi online"
+        " những lưu ý khi thi online",
+        "lời khuyên khi thi online",
+        "vấn đề cần lưu ý khi th online"
       ],
       "response": "1. Kiểm tra kết nối và chuẩn bị 4g để dự phòng \n2. Nhớ ghi lại đáp án các câu trả lời và bấm save thường xuyên\n3. Chụp lại bài làm để chắc chắn bạn đã tham gia thi nếu bài thi gặp vấn đề\n4. Hãy cố gắng submit trước hạn ít nhất 30s"
     },
@@ -620,7 +633,10 @@
         " cài đặt zoom trên máy tính",
         " tải zoom trên máy tính",
         " những bước cài đặt zoom trên máy tính",
-        " cài zoom trên máy tính"
+        " cài zoom trên máy tính",
+        "download zoom trên máy tính",
+        "tải và cài đặt zoom trên máy tính",
+        "tải và cài đặt zoom trên laptop"
       ],
       "response": "Click nút Online Classes > hệ thống sẽ tự download (nếu không click nút download client zoom) > Setup"
     },
@@ -631,7 +647,12 @@
         " zoom không đăng nhập được",
         " đăng nhập vào zoom bị lỗi",
         " lỗi đăng nhập vào zoom",
-        " lỗi không đăng nhập được vào zoom"
+        " lỗi không đăng nhập được vào zoom",
+        "vì sao không đăng nhập được vào zoom",
+        "zoom không đăng nhập được",
+        "zoom đăng nhập bị lỗi",
+        "zoom bị lỗi không đăng nhập được",
+        "zoom bị lỗi đăng nhập"
       ],
       "response": "-Kiểm tra xem máy tính có bị firewall/proxy chặn không\n-Kiểm tra phần mềm diệt virus chặn kết nối\n-Tạo tài khoản mới trên PC https://quantrimang.com/huong-dan-tao-user-moi-tren-windows-10-121226"
     },
@@ -641,7 +662,13 @@
         "cách cài mật khẩu mail dtu",
         " thay đổi mật khẩu mail dtu",
         " thay dổi mật khẩu mail trường",
-        " cách cài mật khẩu mail trường"
+        " cách cài mật khẩu mail trường",
+        "đổi mật khẩu mail trường",
+        "đổi mật khẩu mail dtu",
+        "đổi password mail trường",
+        "đổi password mail dtu",
+        "nhập mật khẩu mới cho mail trường",
+        "nhập mật khẩu mới cho mail dtu"
       ],
       "response": "Không cài mật khẩu cho mail DTU được. Bạn vui lòng đăng nhập vào myDTU và chuyển hướng qua mail cảu bạn nhé."
     },
@@ -652,15 +679,33 @@
         " tại sao đăng kí tài khoản zoom bằng mail trường không thành công",
         " tại sao đăng kí tài khoản zoom bằng mail dtu không thành công",
         " đăng kí tài khoản zoom bằng mail dtu bị lỗi",
-        " đăng kí tào khoản mail trường bị lỗi",
         " lỗi đăng kí tài khoản zoom bằng mail trường không thành công",
-        " lỗi đăng kí tài khoản zoom bằng mail dtu không thành công"
+        " lỗi đăng kí tài khoản zoom bằng mail dtu không thành công",
+        "đăng ký tài khoản zoom bằng mail trường bị lỗi",
+        "sửa lỗi đăng ký tài khoản zoom bằng mail trường không thanh công",
+        "đăng ký tài khoản zoom bằng mail trường bị lỗi",
+        "không thành công khi đăng ký tài khoản zoom bằng mail trường",
+        "không thành công khi đăng ký tài khoản zoom bằng mail dtu",
+        "vì sao đăng ký tài khoản zoom bằng mail trường không thành công",
+        "vì sao không thành công khi đăng ký tài khoản zoom bằng mail trường",
+        "lỗi khi đăng ký tài khoản zoom bằng mail trường",
+        "lỗi khi đăng ký tài khoản zoom bằng mail dtu"
       ],
       "response": "Lí do có thể là bạn đã từng tạo tài khoản @dtu.edu.vn để dùng thử và hết thời hạn nhưng không nhớ. Bạn vui lòng liên hệ đội ngũ hỗ trợ  kỹ thuật yêu cầu xóa tài khoản đã đăng ký sau đó tạo lại tài khoản mới nhé."
     },
     {
-      "tag": "boi_roi",
-      "patterns": [""],
+      "tag": "cach_chuyen_lop/suat_khac",
+      "patterns": [
+        "cách chuyển lớp",
+        "chuyển lớp như thế nào",
+        "làm sao để chuyển lớp",
+        "muốn chuyển lớp thì làm sao",
+        "đổi lớp đang học sang lướp mới",
+        "đổi từ lớp này sang lớp khác",
+        "chuyển sang sang học suất khác của lớp",
+        "muốn học giờ khác của lớp",
+        "cách chuyển sang suất khác của lớp"
+      ],
       "response": "Đéo hiểu"
     }
   ]

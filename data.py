@@ -1,7 +1,7 @@
 import json
-
 with open('intent1.json') as file:
   data = json.loads(file.read())
+# print(label)
 
 def get_dbtrain():
     db_train = []
