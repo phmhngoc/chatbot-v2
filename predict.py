@@ -1,5 +1,5 @@
 import data
-from model import LogisticRegression_Model, NaiveBayes_Model
+from model import LogisticRegression_Model, SVM_Model
 import numpy as np
 import pandas as pd
 
@@ -11,7 +11,7 @@ class TextClassificationPredict(object):
         train_data = data.get_dbtrain()
         df_train = pd.DataFrame(train_data)
         model = LogisticRegression_Model()
-        model2 = NaiveBayes_Model()
+        model2 = SVM_Model()
         data_answer = pd.DataFrame(data.get_dbanswers())
         # Print predicted result
         while True:

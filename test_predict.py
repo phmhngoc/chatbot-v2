@@ -1,24 +1,26 @@
-import data
+import test_data
 from model import LogisticRegression_Model, SVM_Model
 import numpy as np
 import pandas as pd
-from pyvi import ViTokenizer
+from text_preprocess import text_preprocess
 
 class TextClassificationPredict(object):
     def __init__(self):
         self.test = None
     
     def get_train_data(self):
-        train_data = data.get_dbtrain()
+        train_data = test_data.get_dbtrain()
         df_train = pd.DataFrame(train_data)
         model = LogisticRegression_Model()
         model2 = SVM_Model()
-        data_answer = pd.DataFrame(data.get_dbanswers())
+        data_answer = pd.DataFrame(test_data.get_dbanswers())
         # Print predicted result
         while True:
             question = input()
+            question = text_preprocess(question)
             # data_test.append({"Question": question})
             df_test = pd.DataFrame([{"Question": (question)}])
+            # print(df_train["Question"])
             clf = model.clf.fit(df_train["Question"], df_train.Intent)
             clf1 = model2.clf.fit(df_train["Question"], df_train.Intent)
             predicted = clf.predict(df_test["Question"])

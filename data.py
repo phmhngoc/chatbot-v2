@@ -5,7 +5,7 @@ with open('intent1.json') as file:
 
 def get_dbtrain():
     db_train = []
-    for intent in data["intents"]:
+    for intent in data:
         for pattern in intent["patterns"]:
             db_train.append({"Question": pattern, "Intent": intent["tag"]})
     return db_train
@@ -13,7 +13,7 @@ def get_dbtrain():
 
 def get_dbanswers():
     db_answers = []
-    for intent in data["intents"]:
+    for intent in data:
         db_answers.append({"Answers": intent["response"], "Intent": intent["tag"]})
     return db_answers
 

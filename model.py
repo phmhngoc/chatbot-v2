@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import LogisticRegression
 from transformer import FeatureTransformer
-# from sklearn.svm import SVC
+from sklearn.svm import SVC
 import pickle
 import json
 from sklearn.model_selection import train_test_split
@@ -33,21 +33,21 @@ with open('intent1.json') as file:
 # y_test = label_encoder.transform(y_test)
 
 # print(X_train)
-class NaiveBayes_Model(object):
-    def __init__(self):
-        self.clf = self._init_pipeline()
+# class NaiveBayes_Model(object):
+#     def __init__(self):
+#         self.clf = self._init_pipeline()
 
-    @staticmethod
-    def _init_pipeline():
-        pipe_line = Pipeline([
-            ("transformer", FeatureTransformer()),#sử dụng pyvi tiến hành word segmentation
-            ("vect", CountVectorizer(ngram_range=(1,1),
-                                             max_df=0.8,
-                                             max_features=None)),#bag-of-words
-            ("tfidf", TfidfTransformer()),#tf-idf
-            ("clf", MultinomialNB())#model naive bayes
-        ])
-        return pipe_line
+#     @staticmethod
+#     def _init_pipeline():
+#         pipe_line = Pipeline([
+#             ("transformer", FeatureTransformer()),#sử dụng pyvi tiến hành word segmentation
+#             ("vect", CountVectorizer(ngram_range=(1,1),
+#                                              max_df=0.8,
+#                                              max_features=None)),#bag-of-words
+#             ("tfidf", TfidfTransformer()),#tf-idf
+#             ("clf", MultinomialNB())#model naive bayes
+#         ])
+#         return pipe_line
 
 class LogisticRegression_Model(object):
     def __init__(self):
@@ -64,19 +64,19 @@ class LogisticRegression_Model(object):
 
         return pipe_line
 
-# class SVM_Model(object):
-#     def __init__(self):
-#         self.clf = self._init_pipeline()
+class SVM_Model(object):
+    def __init__(self):
+        self.clf = self._init_pipeline()
 
-#     @staticmethod
-#     def _init_pipeline():
-#         pipe_line = Pipeline([
-#             ("transformer", FeatureTransformer()),
-#             ("vect", CountVectorizer()),
-#             ("tfidf", TfidfTransformer()),
-#             ("clf", SVC(kernel='sigmoid', C=500, gamma='scale', probability=True, class_weight='balanced'))
-#         ])
-#         return pipe_line
+    @staticmethod
+    def _init_pipeline():
+        pipe_line = Pipeline([
+            ("transformer", FeatureTransformer()),
+            ("vect", CountVectorizer()),
+            ("tfidf", TfidfTransformer()),
+            ("clf", SVC(kernel='sigmoid', C=500, gamma='scale', probability=True, class_weight='balanced'))
+        ])
+        return pipe_line
 
 # model = LogisticRegression_Model()
 # clf = model.clf.fit(X_train, y_train)

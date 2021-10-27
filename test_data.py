@@ -1,30 +1,29 @@
 import json
 from pyvi import ViTokenizer
+from text_preprocess import text_preprocess
 
-with open('test_intent.json') as file:
+with open('intent1.json') as file:
   data = json.loads(file.read())
-
-with open("vietnamese-stopwords-dash.txt") as file1:
-  stopwords = file1.read()
 
 def get_dbtrain():
     db_train = []
-    for intent in data["intent"]:
+    for intent in data:
         for pattern in intent["patterns"]:
-            db_train.append({"Question": pattern, "Intent": intent["tag"]})
-            pattern = ViTokenizer.tokenize(pattern)
-            # pattern = [w for w in pattern if not w.lower() in stopwords]
-            print(pattern)
-    # return db_train
+          pattern = text_preprocess(pattern)
+          db_train.append({"Question": pattern, "Intent": intent["tag"]})
+          # pattern = ViTokenizer.tokenize(pattern)
+          # pattern = [w for w in pattern if not w.lower() in stopwords]
+          # print(pattern)
+    return db_train
 # def remove_stopwords(text):
 
 
 get_dbtrain()
-# def get_dbanswers():
-#     db_answers = []
-#     for intent in data["intents"]:
-#         db_answers.append({"Answers": intent["response"], "Intent": intent["tag"]})
-#     return db_answers
+def get_dbanswers():
+    db_answers = []
+    for intent in data:
+        db_answers.append({"Answers": intent["response"], "Intent": intent["tag"]})
+    return db_answers
 
 
 # def get_fallback_intent():

@@ -605,16 +605,12 @@ khó_nghĩ
 khó_nói
 khó_thấy
 khó_tránh
-không
 không_ai
 không_bao_giờ
 không_bao_lâu
 không_biết
 không_bán
 không_chỉ
-không_còn
-không_có
-không_có_gì
 không_cùng
 không_cần
 không_cứ
@@ -628,7 +624,6 @@ không_nhận
 không_những
 không_phải
 không_phải_không
-không_thể
 không_tính
 không_điều_kiện
 không_được
@@ -772,7 +767,6 @@ mà_không
 mà_lại
 mà_thôi
 mà_vẫn
-mình
 mạnh
 mất
 mất_còn
@@ -823,7 +817,6 @@ ngay_thật
 ngay_tức_khắc
 ngay_tức_thì
 ngay_từ
-nghe
 nghe_chừng
 nghe_hiểu
 nghe_không
@@ -833,7 +826,6 @@ nghe_như
 nghe_nói
 nghe_ra
 nghe_rõ
-nghe_thấy
 nghe_tin
 nghe_trực_tiếp
 nghe_đâu
@@ -875,9 +867,7 @@ ngôi_thứ
 ngõ_hầu
 ngăn_ngắt
 ngươi
-người
 người_hỏi
-người_khác
 người_khách
 người_mình
 người_nghe
@@ -1063,7 +1053,7 @@ nớ
 nức_nở
 nữa
 nữa_khi
-nữa_là
+n  a_là
 nữa_rồi
 oai_oái
 oái
