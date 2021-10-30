@@ -605,7 +605,6 @@ khó_nghĩ
 khó_nói
 khó_thấy
 khó_tránh
-không_ai
 không_bao_giờ
 không_bao_lâu
 không_biết
@@ -620,13 +619,11 @@ không_hay
 không_khỏi
 không_kể
 không_ngoài
-không_nhận
 không_những
 không_phải
 không_phải_không
 không_tính
 không_điều_kiện
-không_được
 không_đầy
 không_để
 khẳng_định
@@ -830,7 +827,6 @@ nghe_tin
 nghe_trực_tiếp
 nghe_đâu
 nghe_đâu_như
-nghe_được
 nghen
 nghiễm_nhiên
 nghĩ
@@ -1409,7 +1405,7 @@ trong_này
 trong_số
 trong_vùng
 trong_đó
-trong_ấy
+trong_  y
 tránh
 tránh_khỏi
 tránh_ra

@@ -33,21 +33,21 @@ with open('intent1.json') as file:
 # y_test = label_encoder.transform(y_test)
 
 # print(X_train)
-# class NaiveBayes_Model(object):
-#     def __init__(self):
-#         self.clf = self._init_pipeline()
+class NaiveBayes_Model(object):
+    def __init__(self):
+        self.clf = self._init_pipeline()
 
-#     @staticmethod
-#     def _init_pipeline():
-#         pipe_line = Pipeline([
-#             ("transformer", FeatureTransformer()),#sử dụng pyvi tiến hành word segmentation
-#             ("vect", CountVectorizer(ngram_range=(1,1),
-#                                              max_df=0.8,
-#                                              max_features=None)),#bag-of-words
-#             ("tfidf", TfidfTransformer()),#tf-idf
-#             ("clf", MultinomialNB())#model naive bayes
-#         ])
-#         return pipe_line
+    @staticmethod
+    def _init_pipeline():
+        pipe_line = Pipeline([
+            # ("transformer", FeatureTransformer()),#sử dụng pyvi tiến hành word segmentation
+            ("vect", CountVectorizer(ngram_range=(1,1),
+                                             max_df=0.8,
+                                             max_features=None)),#bag-of-words
+            ("tfidf", TfidfTransformer()),#tf-idf
+            ("clf", MultinomialNB())#model naive bayes
+        ])
+        return pipe_line
 
 class LogisticRegression_Model(object):
     def __init__(self):
@@ -56,7 +56,7 @@ class LogisticRegression_Model(object):
     @staticmethod
     def _init_pipeline():
         pipe_line = Pipeline([
-            ("transformer", FeatureTransformer()),
+            # ("transformer", FeatureTransformer()),
             ("vect", CountVectorizer()),
             ("tfidf", TfidfTransformer()),
             ("clf", LogisticRegression(C=212.10, max_iter=10000, solver='lbfgs', multi_class='multinomial'))
@@ -71,10 +71,10 @@ class SVM_Model(object):
     @staticmethod
     def _init_pipeline():
         pipe_line = Pipeline([
-            ("transformer", FeatureTransformer()),
-            ("vect", CountVectorizer()),
+            # ("transformer", FeatureTransformer()),
+            ("vect", CountVectorizer(ngram_range=(1,1), max_df=0.8, max_features=None)),
             ("tfidf", TfidfTransformer()),
-            ("clf", SVC(kernel='sigmoid', C=500, gamma='scale', probability=True, class_weight='balanced'))
+            ("clf", SVC(kernel='linear', C=5000, gamma='scale', probability=True, class_weight='balanced'))
         ])
         return pipe_line
 

@@ -1,8 +1,7 @@
 from pyvi import ViTokenizer
 import regex as re
 
-with open ('vietnamese-stopwords-dash.txt', 'r', encoding='UTF-8') as f:
-    stop_words = f.read()
+
 
 uniChars = "àáảãạâầấẩẫậăằắẳẵặèéẻẽẹêềếểễệđìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵÀÁẢÃẠÂẦẤẨẪẬĂẰẮẲẴẶÈÉẺẼẸÊỀẾỂỄỆĐÌÍỈĨỊÒÓỎÕỌÔỒỐỔỖỘƠỜỚỞỠỢÙÚỦŨỤƯỪỨỬỮỰỲÝỶỸỴÂĂĐÔƠƯ"
 unsignChars = "aaaaaaaaaaaaaaaaaeeeeeeeeeeediiiiiooooooooooooooooouuuuuuuuuuuyyyyyAAAAAAAAAAAAAAAAAEEEEEEEEEEEDIIIOOOOOOOOOOOOOOOOOOOUUUUUUUUUUUYYYYYAADOOU"
@@ -136,7 +135,7 @@ def chuan_hoa_dau_cau_tieng_viet(sentence):
         :return:
         """
     sentence = sentence.lower()
-    words = sentence.split()
+    words = sentence.split(" ")
     for index, word in enumerate(words):
         cw = re.sub(r'(^\p{P}*)([p{L}.]*\p{L}+)(\p{P}*$)', r'\1/\2/\3', word).split('/')
         # print(cw)
@@ -149,13 +148,18 @@ def remove_html(txt):
     return re.sub(r'<[^>]*>', '', txt)
 
 def remove_stopwords(txt):
-    txt = txt.split()
-    txt = ' '.join([w for w in txt if not w in stop_words])
-    return txt
+    newTxt= []
+    with open ('vietnamese-stopwords-dash.txt', 'r', encoding='UTF-8') as f:
+        for word in txt.split(" "):
+            check = 1
+            for line in f:
+                if (word == line.split("\n")[0]): 
+                    check = 0
+                    break
+            if(check==1): newTxt.append(word)
+        return ' '.join(newTxt)
 
 def text_preprocess(document):
-    # xóa html code
-    document = remove_html(document)
     # chuẩn hóa unicode
     document = convert_unicode(document)
     # chuẩn hóa cách gõ dấu tiếng Việt

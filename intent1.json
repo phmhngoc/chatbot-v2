@@ -1,5 +1,24 @@
 [
   {
+    "tag": "xin_chao",
+    "patterns": [
+      "xin chào",
+      "chào",
+      "hi",
+      "hello",
+      "chào bạn",
+      "cậu tên gì",
+      "tên gì",
+      "your name",
+      "bạn tên gì"
+    ],
+    "response": [
+      "Hello nhá. Mình là DTUBot, mình có thể giúp gì cho bạn?",
+      "Chào bạn, mình là DTUBot. Mình có thể giúp gì cho bạn?",
+      "Mình tên DTUBot. Chatbot hỗ trợ các bạn trong việc sử dụng các phần mềm để học. Bạn đang có vấn đề gì vậy?"
+    ]
+  },
+  {
     "tag": "loi_khong_nghe_thay_tieng_nguoi_khac_trong_zoom",
     "patterns": [
       "Vì sao không nghe được người khác nói trong zoom",
@@ -50,7 +69,10 @@
       " mình nói không có tiếng",
       " người khác không thấy tiếng mình nói",
       " nói nhưng không ai nghe được",
-      "nói không ai nghe"
+      "nói không ai nghe",
+      "nói nhưng người khác không nghe được",
+      " nói người khác không nghe",
+      " không ai nghe mình nói"
     ],
     "response": "Kiểm tra lại mic bằng cách vào setting -> audio -> test mic -> nếu thấy nhận tín hiệu thì ok, trường hợp không được thì chọn lại đầu vào âm thanh trong mục thả xuống bên cạnh"
   },
@@ -727,6 +749,32 @@
       "muốn học giờ khác của lớp",
       "cách chuyển sang suất khác của lớp"
     ],
-    "response": "Đéo hiểu"
+    "response": "Đầu tiên bạn hãy vào MyDTU hủy lớp bạn không muốn học nữa. Sau đó bạn đăng kí lớp bạn muốn học là được. Chú ý là chỉ đổi lớp đưuocj trong thời gian hệ thống cho phép."
+  },
+  {
+    "tag": "tam_biet",
+    "patterns": [
+      "Tạm biệt",
+      "Chào tạm biệt",
+      "Bye",
+      "Bye bye",
+      "Goodbye",
+      "See you later",
+      "bái bai",
+      "hẹn gặp lại"
+    ],
+    "response": [
+      "Tạm biệt. Nếu bạn còn thắc mắc thì đừng ngại hỏi mình.",
+      "Bái bai. Nếu có thắc mắc thì hãy quay lại đây nha."
+    ]
+  },
+  {
+    "tag": "cam_on",
+    "patterns": ["cảm ơn", "Cảm ơn nha", "Thanks", "Thank you", "cảm ơn bạn"],
+    "response": [
+      "Không có gì. Nếu còn vấn đề gì thì cứ hỏi mình nhé!!!",
+      "Giúp được bạn là mình vui rồi UwU",
+      "Nếu còn vấn đề gì thì cứ hỏi mình nhé?"
+    ]
   }
 ]

@@ -1,4 +1,5 @@
 import json
+from text_preprocess import text_preprocess
 with open('intent1.json') as file:
   data = json.loads(file.read())
 # print(label)
@@ -7,7 +8,7 @@ def get_dbtrain():
     db_train = []
     for intent in data:
         for pattern in intent["patterns"]:
-            db_train.append({"Question": pattern, "Intent": intent["tag"]})
+            db_train.append({"Question": text_preprocess(pattern), "Intent": intent["tag"]})
     return db_train
 
 
